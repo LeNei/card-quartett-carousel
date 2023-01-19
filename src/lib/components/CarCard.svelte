@@ -16,16 +16,16 @@
 </script>
 
 <div
-	class="w-[350px] h-[500px] absolute bg-white rounded-xl p-2"
-	style="transform: rotateY({rotation}deg) translateZ(250px);"
+	class="w-[250px] md:w-[350px] h-[400px] md:h-[500px] absolute bg-white rounded-xl p-2"
+	style="transform: rotateY({rotation}deg) translateZ(200px);"
 >
 	<div class="bg-zinc-700 h-full rounded-xl overflow-hidden">
 		<h1
-			class="mb-2 text-lg font-semibold text-white bg-zinc-800 shadow-lg w-fit py-1 px-3 rounded-md"
+			class="mb-2 text-sm md:text-lg font-semibold text-white bg-zinc-800 shadow-lg w-fit py-1 px-3 rounded-md"
 		>
 			{title}
 		</h1>
-		<div class="w-full h-[200px]">
+		<div class="w-full h-[125px] md:h-[200px]">
 			<img class="object-cover w-full h-full" alt="" src={img} />
 		</div>
 		<div class="grid grid-cols-2 gap-4 p-5">
