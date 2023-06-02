@@ -1,6 +1,6 @@
-import ferrariImg from '$lib/assets/ferrari_488.jpeg';
-import fordImg from '$lib/assets/ford_mustang.jpeg';
-import lamborghiniImg from '$lib/assets/lamborghini_hurracan.jpeg';
+import ferrariImg from '$lib/assets/ferrari_488.jpeg?h=200&webp';
+import fordImg from '$lib/assets/ford_mustang.jpeg?h=200&webp';
+import lamborghiniImg from '$lib/assets/lamborghini_hurracan.jpeg?h=200&webp';
 
 interface Car {
 	img: string;
