@@ -13,11 +13,13 @@
 	export let maxKmh: number;
 	export let cylinders: number;
 	export let roundsPerMin: number;
+	export let href: string;
 </script>
 
-<div
+<a
 	class="w-[250px] md:w-[350px] h-[400px] md:h-[500px] absolute bg-white rounded-xl p-2"
 	style="transform: rotateY({rotation}deg) translateZ(200px);"
+	href={'/car/' + href}
 >
 	<div class="bg-zinc-700 h-full rounded-xl overflow-hidden">
 		<h1
@@ -37,4 +39,4 @@
 			<DetailBox icon={carStatIcons.cylinders} title="Zylinder" value={cylinders} />
 		</div>
 	</div>
-</div>
+</a>

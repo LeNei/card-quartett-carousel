@@ -23,6 +23,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Geburtstag</title>
+	<meta name="description" content="Alles gute zum 20. 🎉" />
+</svelte:head>
 <div class="h-screen w-full overflow-hidden grid place-items-center bg-zinc-900">
 	<div class="relative w-[250px] md:w-[350px] h-[400px] md:h-[500px] carousel-container ">
 		<div
@@ -32,7 +36,7 @@
 			style="transform: rotateY({current * partialRotation}deg);"
 		>
 			{#each cars as car, i}
-				<CarCard rotation={i * partialRotation} {...car} />
+				<CarCard rotation={i * partialRotation} {...car} href={car.shortTitle} />
 			{/each}
 		</div>
 		<div class="hidden md:block md:absolute -bottom-28 left-1/2 -translate-x-1/2 space-x-3">
